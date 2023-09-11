@@ -1,0 +1,17 @@
+@import '../media.scss';
+
+main {
+    grid-column: 1 / 11;
+    padding: 10px 20px;
+    background-color: rgb(252, 245, 237);
+
+    @include large {
+        grid-column: 1 / 7;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}

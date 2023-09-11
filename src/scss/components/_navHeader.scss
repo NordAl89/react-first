@@ -1,0 +1,118 @@
+@import "../media.scss";
+@import "./functions";
+
+body {
+    @include smaller {
+        //for blocking scroll when
+        overflow: scroll; 
+    } 
+}
+
+.navHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .burgerMenue {
+        display: none;
+    }
+
+    @include smaller {
+        
+
+        .burgerMenue {
+            position: relative;
+            z-index: 10;
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            width: vw(30);
+            height: vw(30);
+            background: transparent;
+            cursor: pointer;
+
+            span {
+                display: block;
+                width: 100%;
+                height: vw(3);
+                background-color: black;
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    transition: transform 1s;
+                }
+            }
+
+            &:hover {
+                span {
+                    background-color: $accent;
+                }
+            }
+        }
+    }
+
+    ul {
+        @include smaller {
+            position: fixed;
+            // left: 0;
+            right: -160px;
+            top: 60px;
+            padding: 20px 0 0 20px;
+            background-color: gray;
+            color: #fff;
+            // bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 160px;
+            transition: right 1s;
+            
+        }
+        li {
+            display: inline-block;
+            margin-right: vw(20);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                color: $accent;
+            }
+
+            &:active {
+                color: rgb(0, 86, 143);
+            }
+        }
+    }
+
+    .openBurgerMenu {
+        @include smaller {
+            right: 0;
+        }
+    }
+
+    .burgerMenueClose {
+        span {
+            transition: transform 1s;
+
+            &:first-child {
+                display: none;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                transform: translateY(-50%) rotate(45deg);
+                top: 50%;
+            }
+
+            &:nth-child(3) {
+                position: absolute;
+                transform: translateY(-50%) rotate(-45deg);
+                top: 50%;
+            }
+        }
+    }
+}
