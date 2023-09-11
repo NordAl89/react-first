@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/NordAl89.github.io/react-first/static/css/main.6b0b296c.css",
+    "main.js": "/NordAl89.github.io/react-first/static/js/main.dffdf2cd.js",
+    "static/media/logo2.jpg": "/NordAl89.github.io/react-first/static/media/logo2.2489d4df319ac7c73108.jpg",
+    "index.html": "/NordAl89.github.io/react-first/index.html",
+    "main.6b0b296c.css.map": "/NordAl89.github.io/react-first/static/css/main.6b0b296c.css.map",
+    "main.dffdf2cd.js.map": "/NordAl89.github.io/react-first/static/js/main.dffdf2cd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b0b296c.css",
+    "static/js/main.dffdf2cd.js"
+  ]
+}
