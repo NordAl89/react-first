@@ -1,3 +1,4 @@
 [
-  {name: "Alex", age: 34},
+  {"name": "Alex", "age": 34},
+  {"name": "Helena", "age": 24},
 ]
